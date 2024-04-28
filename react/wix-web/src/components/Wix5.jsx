@@ -1,18 +1,10 @@
 import {  Container, Row, Col } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import * as React from 'react';
-import Button from 'react-bootstrap/Button';
-
-
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
-// import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-
 import Avatar from '@mui/material/Avatar';
-// import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { grey, red } from '@mui/material/colors';
 
@@ -20,44 +12,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import RouterLink from './RouterLink';
 
-
-
-import { NavLink } from 'react-router-dom';
-const navLinkStyle = ({isActive}) => {
-    return{
-      fontWeight:  'normal',
-      textDecoration:  'none',
-      color: 'gray',
-      textAlign:'justify',
-      marginRight:'30px',
-      fontSize: '20px'
-    }
-  }
 
 function Wix5() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" style={{ height: '90px' }}>
-    <Container>
-      <Navbar.Brand href="#home" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >THE WILD KITCHEN</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-
-      <Nav>
-            <NavLink to="/" style={navLinkStyle}>Home</NavLink>            
-            <NavLink to="Wix2" style={navLinkStyle}>Portfolio</NavLink>
-            <NavLink to="Wix3" style={navLinkStyle}>About</NavLink>
-            <NavLink to="Wix4" style={navLinkStyle}>Books</NavLink>
-            <NavLink to="Wix5" style={navLinkStyle}>Blogs</NavLink>
-            <NavLink to="Wix6" style={navLinkStyle}>Client Albums</NavLink>
-            <NavLink to="Wix7" style={navLinkStyle}>Contact</NavLink>
-          </Nav>
-        
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-
+    <RouterLink/>
 
   <h1 className="d-flex justify-content-center align-items-center" style={{margin:'4%', marginTop:'80px', fontSize: '50px', fontFamily:'Garamond', }}>BLOGS</h1>
   <br />

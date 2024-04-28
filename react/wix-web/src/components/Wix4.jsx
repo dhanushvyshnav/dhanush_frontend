@@ -8,41 +8,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-import { NavLink } from 'react-router-dom';
-const navLinkStyle = ({isActive}) => {
-    return{
-      fontWeight:  'normal',
-      textDecoration:  'none',
-      color: 'gray',
-      textAlign:'justify',
-      marginRight:'30px',
-      fontSize: '20px'
-    }
-  }
-
+import RouterLink from './RouterLink';
 function Wix4() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top" style={{ height: '90px' }}>
-    <Container>
-      <Navbar.Brand href="#home" style={{ fontSize: '35px', fontFamily:'Quicksand' }} >THE WILD KITCHEN</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-
-      <Nav>
-            <NavLink to="/" style={navLinkStyle}>Home</NavLink>            
-            <NavLink to="Wix2" style={navLinkStyle}>Portfolio</NavLink>
-            <NavLink to="Wix3" style={navLinkStyle}>About</NavLink>
-            <NavLink to="Wix4" style={navLinkStyle}>Books</NavLink>
-            <NavLink to="Wix5" style={navLinkStyle}>Blogs</NavLink>
-            <NavLink to="Wix6" style={navLinkStyle}>Client Albums</NavLink>
-            <NavLink to="Wix7" style={navLinkStyle}>Contact</NavLink>
-          </Nav>
-        
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-
+     <RouterLink/>
   <h1 className="d-flex justify-content-center align-items-center" style={{margin:'4%', marginTop:'7%', fontSize: '50px', fontFamily:'Garamond', }}>BOOKS</h1>
    <br />
     <Container style={{ backgroundColor: '#F0F0F0', height: '60vh', width: '100vw'}}>
