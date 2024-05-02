@@ -1,10 +1,10 @@
 import './App.css';
-import Todo from './components/Todo';
+import AxiosTodo from './components/AxiosTodo';
 
 function App() {
   return (
     <div className="App">
-      <Todo/>
+      <AxiosTodo/>
     </div>
   );
 }
