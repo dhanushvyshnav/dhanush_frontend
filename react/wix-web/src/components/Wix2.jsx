@@ -1,5 +1,4 @@
 import {  Container, Row, Col } from 'react-bootstrap';
-
 import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,17 +6,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import RouterLink from './RouterLink';
-
-
-
 function Wix2() {
   return (
     <>
-  
   <RouterLink/>
-
-
-    <h1 className="d-flex justify-content-center align-items-center" style={{margin:'4%', marginTop:'10%', fontSize: '50px', fontFamily:'Garamond', }}>PORTFOLIO</h1>
+    <h1 className="d-flex justify-content-center align-items-center" style={{margin:'3%', marginTop:'10%', fontSize: '50px', fontFamily:'Garamond', }}>PORTFOLIO</h1>
 <Container>
 
       <Row>
@@ -31,7 +24,6 @@ function Wix2() {
             </div>
           </div>
         </Col>
-
         <Col xs={8} md={4}>
   <div style={{ position: 'relative' }}>
     <img src="https://images.squarespace-cdn.com/content/v1/611bc387b63b0f6f4d8644a0/0b76b58c-d028-4e63-89a8-728972baf71b/Fresh+Homemade+Spaghetti+with+Pork+and+Beed+Meatballs+and+Shaved+Parmesan+Cheese.jpg" 
@@ -56,9 +48,6 @@ function Wix2() {
       </Row>
     </Container>
 <br />
-
-
-
     <div className='d-flex justify-content-center align-items-center'>
     <PinterestIcon style={{  marginLeft: '20px' }}></PinterestIcon>
     <FacebookIcon style={{  marginLeft: '20px' }}></FacebookIcon>
@@ -68,8 +57,6 @@ function Wix2() {
 <br />
     <p className='d-flex justify-content-center align-items-center'>&copy; {new Date().getFullYear(2035)} By The Art of Food. Powered and secured by 
     <a style={{ color:'black', marginLeft: '5px' }} href='xyz'>Wix</a></p>
-
-
     </>
   );
 }

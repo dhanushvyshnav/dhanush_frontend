@@ -1,6 +1,5 @@
 
 import React, { useReducer, useState } from 'react'
-
 const reducer =(state,action)=>{
     switch(action.type){
         case "ADD":
@@ -28,7 +27,6 @@ const reducer =(state,action)=>{
                 return state
     }
 }
-
  const ToDo = () => {
     const [input,setInput]=useState({})
     const [state,dispatch]=useReducer(reducer,[])

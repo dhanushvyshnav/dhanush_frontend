@@ -1,6 +1,4 @@
 import {  Container, Row, Col, Form } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -18,12 +16,12 @@ function Wix7() {
     <RouterLink/>
 
 
-    <Container style={{ backgroundColor: '#F0F0F0', height: '140vh', width: '100vw'}}>
+    <Container style={{ backgroundColor: '#F0F0F0', height: '180vh', width: '100vw'}}>
       <Row>
         <Col xs={6} md={6}>
           <div style={{ position: 'relative' }}>
             <img src="https://static.wixstatic.com/media/f61af8_bed971a2eea0451d8a185669c2cbe5c7~mv2.jpg/v1/fill/w_562,h_1118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_bed971a2eea0451d8a185669c2cbe5c7~mv2.jpg" 
-            alt="Your img" style={{ width: '100%', height:'140vh'}} />
+            alt="Your img" style={{ width: '100%', height:'170vh'}} />
            
           </div>
         </Col>
@@ -61,9 +59,7 @@ function Wix7() {
       <Form.Label>Message *</Form.Label>
       <Form.Control as="textarea" rows={4} />
     </Form.Group>
-
     <Button variant="outline-light" style={{ borderRadius: '0', height: '40px', width: '130px',backgroundColor: 'darkslategray', color: 'white', marginLeft:'73%' }}>View</Button>
-
     <br /> <br />
     <p>Stay Up-To-Date with New Posts</p>
             <div className='d-flex'>
@@ -76,7 +72,6 @@ function Wix7() {
               Subscrib Now
             </Button>
             </div>
-
   </Col>
 </Form>
           </div>
@@ -85,7 +80,6 @@ function Wix7() {
       </Row>
     </Container>
 <br />
-
     <div className='d-flex justify-content-center align-items-center'>
     <PinterestIcon style={{  marginLeft: '20px' }}></PinterestIcon>
     <FacebookIcon style={{  marginLeft: '20px' }}></FacebookIcon>
@@ -99,5 +93,4 @@ function Wix7() {
     </>
   );
 }
-
 export default Wix7;

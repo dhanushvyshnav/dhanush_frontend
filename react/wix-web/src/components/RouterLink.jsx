@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import "./RouterLink.css"
 
 function RouterLink() {
   return (
@@ -26,8 +25,7 @@ function RouterLink() {
           </button>
           <div
             className="collapse navbar-collapse col-10 d-flex justify-content-center"
-            id="navbarNav"
-          >
+            id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">

@@ -1,6 +1,4 @@
 import {  Container, Row, Col } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import * as React from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
@@ -16,10 +14,11 @@ function Wix3() {
 <br />
 <br />
 
-    <Container style={{ backgroundColor: '#F0F0F0', height:'120vh', width:'200vh'}}>
+    <Container style={{ backgroundColor: '#F0F0F0', height:'140vh', width:'200vh'}}>
       <Row>
         <Col xs={9} md={6}>
-          <img src="https://assets-global.website-files.com/5fc8b9cce856d2881fb9dd2a/65032fe941ac15b0c054465b_Perfect.jpg" alt="Your abc" style={{ width: '100%', height: '120vh' }} />           
+          <br /> <br />
+          <img src="https://assets-global.website-files.com/5fc8b9cce856d2881fb9dd2a/65032fe941ac15b0c054465b_Perfect.jpg" alt="Your abc" style={{ width: '100%', height: '130vh' }} />           
         </Col>
 
         <Col xs={6} md={6} className="d-flex justify-content-center">

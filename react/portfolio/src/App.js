@@ -1,19 +1,11 @@
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Digilog from './components/Digilog';
-
-
-
-
+import CheckPortfolio from './components/CheckPortfolio';
 function App() {
   return (
     <div className="App">
-  
-  <Digilog/>
-
+  <CheckPortfolio/>
     </div>
   );
 }
-
 export default App;

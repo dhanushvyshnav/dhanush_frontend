@@ -55,8 +55,6 @@ const AxiosTodo = () => {
         console.error("Please provide a product ID for editing.");
         return;
       }
-
-      // Prompt confirmation dialog
       const confirmEdit = window.confirm("Are you sure you want to edit this product?");
       if (!confirmEdit) return;
 
@@ -79,9 +77,7 @@ const AxiosTodo = () => {
         console.error("Please provide a product ID for deletion.");
         return;
       }
-  
-      // Prompt confirmation dialog
-      const confirmDelete = window.confirm("Are you sure you want to delete this product?");
+        const confirmDelete = window.confirm("Are you sure you want to delete this product?");
       if (!confirmDelete) return;
   
       await axios.delete(`https://p-9x7e.onrender.com/products/delete-product/${productId}`);
